@@ -7,7 +7,7 @@ A collection of configurations & examples of what you can do with [🦋 Velquori
 2. Hover over its name, right-click, and copy the link.
 3. In the client UI (`Right Shift`), open the *Miscellaneous* tab (globe icon) and click **Import**.
 
-## 🌅 Radiant sunrise
+## [🌅 Radiant sunrise](https://raw.githubusercontent.com/clemenside/velquorin-examples/refs/heads/main/assets/radiant-sunrise.json)
 [<img alt="Radiant sunrise" src="./assets/radiant-sunrise.png">](./assets/radiant-sunrise.json)
 
 ---
