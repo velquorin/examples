@@ -10,5 +10,8 @@ A collection of configurations & examples of what you can do with [🦋 Velquori
 ## [🌅 Radiant sunrise](https://raw.githubusercontent.com/velquorin/examples/refs/heads/main/assets/radiant-sunrise.json)
 [<img alt="Radiant sunrise" src="./assets/radiant-sunrise.png">](./assets/radiant-sunrise.json)
 
+## [🍰 Pastel](https://raw.githubusercontent.com/velquorin/examples/refs/heads/main/assets/pastel.json)
+[<img alt="Pastel" src="./assets/pastel.png">](./assets/pastel.json)
+
 ---
 [This repository is released to the public domain.](LICENSE)

@@ -1,0 +1,1019 @@
+{
+  "options": {
+    "click-gui-key": 344,
+    "locale": ""
+  },
+  "modules": {
+    "ambiance": {
+      "enabled": true,
+      "settings": {
+        "cloud-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 240,
+            "green": 210,
+            "blue": 230,
+            "alpha": 255
+          },
+          "rainbow": false,
+          "hueSpeed": 0.05
+        },
+        "sky-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 200,
+            "green": 220,
+            "blue": 255,
+            "alpha": 255
+          },
+          "rainbow": false,
+          "hueSpeed": 0.05
+        },
+        "fog-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 220,
+            "green": 200,
+            "blue": 230,
+            "alpha": 255
+          },
+          "rainbow": false,
+          "hueSpeed": 0.05
+        },
+        "glowing-sky-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 255,
+            "green": 230,
+            "blue": 220,
+            "alpha": 255
+          },
+          "rainbow": false,
+          "hueSpeed": 0.05
+        },
+        "force-time": {
+          "_type": "dev.clemenside.velquorin.module.impl.tweak.Ambiance$ForcedTime",
+          "name": "SUNRISE",
+          "ordinal": 6
+        },
+        "force-weather": {
+          "_type": "dev.clemenside.velquorin.module.impl.tweak.Ambiance$ForcedWeather",
+          "name": "CLEAR",
+          "ordinal": 1
+        },
+        "remove-sun": false,
+        "remove-moon": true,
+        "remove-snow-percentage": 80,
+        "remove-rain-percentage": 80,
+        "modify-stars": false,
+        "star-brightness": 0.0,
+        "modify-clouds": true,
+        "cloud-height": 175,
+        "modify-sky": true,
+        "modify-fog": true,
+        "modify-glowing-sky": true
+      },
+      "custom": {}
+    },
+    "animations": {
+      "enabled": true,
+      "settings": {
+        "hurt-tilt-disable": true
+      },
+      "custom": {}
+    },
+    "armor": {
+      "enabled": false,
+      "settings": {
+        "background-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 0,
+            "green": 0,
+            "blue": 0,
+            "alpha": 128
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "background-enabled": true,
+        "padding-pixels": 2.0,
+        "item-spacing": 4.0,
+        "reverse-list": true,
+        "show-vertically": true,
+        "show-item-names": true,
+        "show-durability": true
+      },
+      "custom": {
+        "anchorVertical": "TOP",
+        "posPercentX": 0.0,
+        "posPercentY": 0.0,
+        "anchorHorizontal": "LEFT"
+      }
+    },
+    "boss-bar": {
+      "enabled": true,
+      "settings": {
+        "use-text-width-for-bar": true,
+        "bar-width": 182,
+        "gap": 5
+      },
+      "custom": {
+        "anchorVertical": "TOP",
+        "posPercentX": 0.5,
+        "posPercentY": 0.0125,
+        "anchorHorizontal": "CENTER"
+      }
+    },
+    "chat": {
+      "enabled": true,
+      "settings": {
+        "stack-suffix-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 179,
+            "green": 179,
+            "blue": 179,
+            "alpha": 255
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "remove-message-limit": true,
+        "stacking": true,
+        "stack-suffix-format": " (x%s)"
+      },
+      "custom": {}
+    },
+    "clock": {
+      "enabled": false,
+      "settings": {
+        "foreground-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 255,
+            "green": 255,
+            "blue": 255,
+            "alpha": 255
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "background-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 0,
+            "green": 0,
+            "blue": 0,
+            "alpha": 128
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "shadow": true,
+        "background-enabled": true,
+        "padding-pixels": 4.0,
+        "scale": 1.0
+      },
+      "custom": {
+        "anchorVertical": "TOP",
+        "posPercentX": 0.0,
+        "posPercentY": 0.0,
+        "anchorHorizontal": "LEFT"
+      }
+    },
+    "combo": {
+      "enabled": false,
+      "settings": {
+        "foreground-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 255,
+            "green": 255,
+            "blue": 255,
+            "alpha": 255
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "background-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 0,
+            "green": 0,
+            "blue": 0,
+            "alpha": 128
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "shadow": true,
+        "background-enabled": true,
+        "padding-pixels": 4.0,
+        "scale": 1.0,
+        "format": "%s hit(s)",
+        "hide-empty": true,
+        "only-players": true
+      },
+      "custom": {
+        "anchorVertical": "TOP",
+        "posPercentX": 0.0,
+        "posPercentY": 0.0,
+        "anchorHorizontal": "LEFT"
+      }
+    },
+    "coordinates": {
+      "enabled": false,
+      "settings": {
+        "foreground-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 255,
+            "green": 255,
+            "blue": 255,
+            "alpha": 255
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "background-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 0,
+            "green": 0,
+            "blue": 0,
+            "alpha": 128
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "shadow": true,
+        "background-enabled": true,
+        "padding-pixels": 4.0,
+        "scale": 1.0,
+        "show-position": true,
+        "show-view-angles": false,
+        "separate-lines": false,
+        "brackets": false,
+        "names": false,
+        "decimal-places": 1,
+        "use-format": false,
+        "format": "[$r($x, 1) $r($y, 1) $r($z, 1)]\n($r($yaw, 1) $r(pitch, 1))"
+      },
+      "custom": {
+        "anchorVertical": "TOP",
+        "posPercentX": 0.0,
+        "posPercentY": 0.0,
+        "anchorHorizontal": "LEFT"
+      }
+    },
+    "cps": {
+      "enabled": false,
+      "settings": {
+        "foreground-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 255,
+            "green": 255,
+            "blue": 255,
+            "alpha": 255
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "background-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 0,
+            "green": 0,
+            "blue": 0,
+            "alpha": 128
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "shadow": true,
+        "background-enabled": true,
+        "padding-pixels": 4.0,
+        "scale": 1.0,
+        "format": "%s | %s CPS"
+      },
+      "custom": {
+        "anchorVertical": "TOP",
+        "posPercentX": 0.0,
+        "posPercentY": 0.0,
+        "anchorHorizontal": "LEFT"
+      }
+    },
+    "cpu": {
+      "enabled": false,
+      "settings": {
+        "foreground-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 255,
+            "green": 255,
+            "blue": 255,
+            "alpha": 255
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "background-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 0,
+            "green": 0,
+            "blue": 0,
+            "alpha": 128
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "shadow": true,
+        "background-enabled": true,
+        "padding-pixels": 4.0,
+        "scale": 1.0,
+        "format": "$format($process)",
+        "update-delay": 2.0
+      },
+      "custom": {
+        "anchorVertical": "TOP",
+        "posPercentX": 0.0,
+        "posPercentY": 0.0,
+        "anchorHorizontal": "LEFT"
+      }
+    },
+    "crosshair": {
+      "enabled": true,
+      "settings": {
+        "variant": {
+          "_type": "dev.clemenside.velquorin.module.impl.tweak.Crosshair$Variant",
+          "name": "ORIGINAL",
+          "ordinal": 0
+        },
+        "scale": 0.8,
+        "force-disable-attack-indicator": false
+      },
+      "custom": {}
+    },
+    "datetime": {
+      "enabled": false,
+      "settings": {
+        "foreground-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 255,
+            "green": 255,
+            "blue": 255,
+            "alpha": 255
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "background-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 0,
+            "green": 0,
+            "blue": 0,
+            "alpha": 128
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "shadow": true,
+        "background-enabled": true,
+        "padding-pixels": 4.0,
+        "scale": 1.0,
+        "time": true,
+        "not-shorten-time": false,
+        "use-custom-time-pattern": false,
+        "custom-time-pattern": "HH:mm",
+        "date": true,
+        "not-shorten-date": true,
+        "use-custom-date-pattern": false,
+        "custom-date-pattern": "EEE, d MMM yyyy"
+      },
+      "custom": {
+        "anchorVertical": "TOP",
+        "posPercentX": 0.0,
+        "posPercentY": 0.0,
+        "anchorHorizontal": "LEFT"
+      }
+    },
+    "day-counter": {
+      "enabled": false,
+      "settings": {
+        "foreground-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 255,
+            "green": 255,
+            "blue": 255,
+            "alpha": 255
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "background-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 0,
+            "green": 0,
+            "blue": 0,
+            "alpha": 128
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "shadow": true,
+        "background-enabled": true,
+        "padding-pixels": 4.0,
+        "scale": 1.0,
+        "format": "%s days"
+      },
+      "custom": {
+        "anchorVertical": "TOP",
+        "posPercentX": 0.0,
+        "posPercentY": 0.0,
+        "anchorHorizontal": "LEFT"
+      }
+    },
+    "effects": {
+      "enabled": false,
+      "settings": {
+        "background-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 0,
+            "green": 0,
+            "blue": 0,
+            "alpha": 128
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "hide-vanilla": true,
+        "shadow": true,
+        "background-enabled": true,
+        "padding-pixels": 4.0,
+        "scale": 1.0,
+        "compact": true,
+        "show-icon": true
+      },
+      "custom": {
+        "anchorVertical": "TOP",
+        "posPercentX": 0.0,
+        "posPercentY": 0.0,
+        "anchorHorizontal": "LEFT"
+      }
+    },
+    "fps": {
+      "enabled": true,
+      "settings": {
+        "foreground-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 223,
+            "green": 194,
+            "blue": 255,
+            "alpha": 255
+          },
+          "rainbow": false,
+          "hueSpeed": 0.0
+        },
+        "background-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 0,
+            "green": 0,
+            "blue": 0,
+            "alpha": 128
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "shadow": true,
+        "background-enabled": false,
+        "padding-pixels": 4.0,
+        "scale": 1.0,
+        "format": "%s FPS"
+      },
+      "custom": {
+        "anchorVertical": "TOP",
+        "posPercentX": 0.0078125,
+        "posPercentY": 0.01459854,
+        "anchorHorizontal": "LEFT"
+      }
+    },
+    "gamma": {
+      "enabled": false,
+      "settings": {
+        "value": 100.0
+      },
+      "custom": {}
+    },
+    "keystrokes": {
+      "enabled": true,
+      "settings": {
+        "active-foreground": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 223,
+            "green": 194,
+            "blue": 255,
+            "alpha": 255
+          },
+          "rainbow": false,
+          "hueSpeed": 0.0
+        },
+        "passive-foreground": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 255,
+            "green": 255,
+            "blue": 255,
+            "alpha": 255
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "active-background": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 99,
+            "green": 80,
+            "blue": 120,
+            "alpha": 204
+          },
+          "rainbow": false,
+          "hueSpeed": 0.0
+        },
+        "passive-background": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 0,
+            "green": 0,
+            "blue": 0,
+            "alpha": 128
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "shadow": true,
+        "show-movement-keys": true,
+        "show-jump-key": true,
+        "hide-jump-key-text": true,
+        "show-mouse-buttons": true,
+        "show-mouse-button-cps": false,
+        "scale": 1.0,
+        "key-size": 19.0,
+        "spacing": 1.0,
+        "animation-ms": 100
+      },
+      "custom": {
+        "anchorVertical": "TOP",
+        "posPercentX": 0.9921875,
+        "posPercentY": 0.01459854,
+        "anchorHorizontal": "RIGHT"
+      }
+    },
+    "latency": {
+      "enabled": false,
+      "settings": {
+        "foreground-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 255,
+            "green": 255,
+            "blue": 255,
+            "alpha": 255
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "background-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 0,
+            "green": 0,
+            "blue": 0,
+            "alpha": 128
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "shadow": true,
+        "background-enabled": true,
+        "padding-pixels": 4.0,
+        "scale": 1.0,
+        "format": "%s ms",
+        "update-delay": 2.0
+      },
+      "custom": {
+        "anchorVertical": "TOP",
+        "posPercentX": 0.0,
+        "posPercentY": 0.0,
+        "anchorHorizontal": "LEFT"
+      }
+    },
+    "memory": {
+      "enabled": false,
+      "settings": {
+        "foreground-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 255,
+            "green": 255,
+            "blue": 255,
+            "alpha": 255
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "background-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 0,
+            "green": 0,
+            "blue": 0,
+            "alpha": 128
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "shadow": true,
+        "background-enabled": true,
+        "padding-pixels": 4.0,
+        "scale": 1.0,
+        "format": "$format(2, $used) / $format(2, $max)",
+        "update-delay": 2.0
+      },
+      "custom": {
+        "anchorVertical": "TOP",
+        "posPercentX": 0.0,
+        "posPercentY": 0.0,
+        "anchorHorizontal": "LEFT"
+      }
+    },
+    "notifications": {
+      "enabled": true,
+      "settings": {},
+      "custom": {}
+    },
+    "particles": {
+      "enabled": true,
+      "settings": {
+        "remove-percentage": 70
+      },
+      "custom": {}
+    },
+    "perspective": {
+      "enabled": false,
+      "settings": {
+        "disable-second-person-toggle": true,
+        "scroll-distance": true,
+        "distance": 4.0,
+        "no-collision": false,
+        "animate": true,
+        "animation-length": 150
+      },
+      "custom": {}
+    },
+    "reach": {
+      "enabled": false,
+      "settings": {
+        "foreground-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 255,
+            "green": 255,
+            "blue": 255,
+            "alpha": 255
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "background-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 0,
+            "green": 0,
+            "blue": 0,
+            "alpha": 128
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "shadow": true,
+        "background-enabled": true,
+        "padding-pixels": 4.0,
+        "scale": 1.0,
+        "format": "%.2f blocks",
+        "hide-empty": true,
+        "only-players": true
+      },
+      "custom": {
+        "anchorVertical": "TOP",
+        "posPercentX": 0.0,
+        "posPercentY": 0.0,
+        "anchorHorizontal": "LEFT"
+      }
+    },
+    "rich-presence": {
+      "enabled": true,
+      "settings": {
+        "hide-activity": false,
+        "force-hide-address": true,
+        "hide-world-name": true
+      },
+      "custom": {}
+    },
+    "scoreboard": {
+      "enabled": true,
+      "settings": {
+        "header-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 0,
+            "green": 0,
+            "blue": 0,
+            "alpha": 102
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "background-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 0,
+            "green": 0,
+            "blue": 0,
+            "alpha": 77
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "foreground-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 255,
+            "green": 255,
+            "blue": 255,
+            "alpha": 255
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "header-enabled": true,
+        "background-enabled": true
+      },
+      "custom": {
+        "anchorVertical": "CENTER",
+        "posPercentX": 0.9921875,
+        "posPercentY": 0.5,
+        "anchorHorizontal": "RIGHT"
+      }
+    },
+    "server-card": {
+      "enabled": false,
+      "settings": {
+        "foreground-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 255,
+            "green": 255,
+            "blue": 255,
+            "alpha": 255
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "background-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 0,
+            "green": 0,
+            "blue": 0,
+            "alpha": 128
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "shadow": true,
+        "background-enabled": true,
+        "padding-pixels": 4.0,
+        "scale": 1.0,
+        "force-hide-server-address": false,
+        "display-server-icon": true,
+        "server-icon-size": 24,
+        "blend-icon-with-background": false
+      },
+      "custom": {
+        "anchorVertical": "TOP",
+        "posPercentX": 0.0,
+        "posPercentY": 0.0,
+        "anchorHorizontal": "LEFT"
+      }
+    },
+    "speed": {
+      "enabled": false,
+      "settings": {
+        "foreground-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 255,
+            "green": 255,
+            "blue": 255,
+            "alpha": 255
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "background-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 0,
+            "green": 0,
+            "blue": 0,
+            "alpha": 128
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "shadow": true,
+        "background-enabled": true,
+        "padding-pixels": 4.0,
+        "scale": 1.0,
+        "format": "%.2f BPS"
+      },
+      "custom": {
+        "anchorVertical": "TOP",
+        "posPercentX": 0.0,
+        "posPercentY": 0.0,
+        "anchorHorizontal": "LEFT"
+      }
+    },
+    "subtitle": {
+      "enabled": true,
+      "settings": {
+        "foreground-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 255,
+            "green": 255,
+            "blue": 255,
+            "alpha": 255
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "scale": 2.0
+      },
+      "custom": {
+        "anchorVertical": "TOP",
+        "posPercentX": 0.5,
+        "posPercentY": 0.47953215,
+        "anchorHorizontal": "CENTER"
+      }
+    },
+    "title": {
+      "enabled": true,
+      "settings": {
+        "foreground-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 255,
+            "green": 255,
+            "blue": 255,
+            "alpha": 255
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "scale": 4.0
+      },
+      "custom": {
+        "anchorVertical": "BOTTOM",
+        "posPercentX": 0.5,
+        "posPercentY": 0.47953215,
+        "anchorHorizontal": "CENTER"
+      }
+    },
+    "viewmodel": {
+      "enabled": false,
+      "settings": {
+        "size": 0.5,
+        "scale-arms": false,
+        "offset-arms": false,
+        "per-hand": true,
+        "x-main": 0.2,
+        "y-main": 0.1,
+        "z-main": -0.3,
+        "x-off": -0.3,
+        "y-off": 0.1,
+        "z-off": -0.3,
+        "x": -0.5,
+        "y": -0.5,
+        "z": -0.5
+      },
+      "custom": {}
+    },
+    "waypoints": {
+      "enabled": true,
+      "settings": {
+        "foreground-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 255,
+            "green": 255,
+            "blue": 255,
+            "alpha": 255
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "background-color": {
+          "_type": "AnimatedColor",
+          "baseColor": {
+            "_type": "Color",
+            "red": 0,
+            "green": 0,
+            "blue": 0,
+            "alpha": 128
+          },
+          "rainbow": false,
+          "hueSpeed": 0.2
+        },
+        "create-binding": {
+          "key": 73,
+          "device": 0
+        },
+        "shadow": true,
+        "background-enabled": true,
+        "padding-pixels": 4.0,
+        "format": "$name ($distance blocks away)",
+        "hide-when-away": true,
+        "hide-when-away-blocks": 750
+      },
+      "custom": {}
+    },
+    "window": {
+      "enabled": true,
+      "settings": {
+        "title-modulator": {
+          "_type": "dev.clemenside.velquorin.module.impl.tweak.Window$TitleModulator",
+          "name": "REPLACE",
+          "ordinal": 2
+        },
+        "custom-icon": true,
+        "custom-title": true
+      },
+      "custom": {}
+    }
+  }
+}
