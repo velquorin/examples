@@ -1,8 +1,4 @@
 {
-  "options": {
-    "click-gui-key": 344,
-    "locale": ""
-  },
   "modules": {
     "ambiance": {
       "enabled": true,
@@ -104,10 +100,10 @@
         "background-enabled": true,
         "padding-pixels": 2.0,
         "item-spacing": 4.0,
-        "reverse-list": true,
-        "show-vertically": true,
         "show-item-names": true,
-        "show-durability": true
+        "show-durability": true,
+        "reverse-list": true,
+        "show-vertically": true
       },
       "custom": {
         "anchorVertical": "TOP",
@@ -221,9 +217,9 @@
         "background-enabled": true,
         "padding-pixels": 4.0,
         "scale": 1.0,
-        "format": "%s hit(s)",
         "hide-empty": true,
-        "only-players": true
+        "only-players": true,
+        "format": "%s hit(s)"
       },
       "custom": {
         "anchorVertical": "TOP",
@@ -270,7 +266,7 @@
         "names": false,
         "decimal-places": 1,
         "use-format": false,
-        "format": "[$r($x, 1) $r($y, 1) $r($z, 1)]\n($r($yaw, 1) $r(pitch, 1))"
+        "format": "[$round($x, 1) $round($y, 1) $round($z, 1)]\n($round($yaw, 1) $round(pitch, 1))"
       },
       "custom": {
         "anchorVertical": "TOP",
@@ -350,8 +346,8 @@
         "background-enabled": true,
         "padding-pixels": 4.0,
         "scale": 1.0,
-        "format": "$format($process)",
-        "update-delay": 2.0
+        "update-delay": 2.0,
+        "format": "$format($process)"
       },
       "custom": {
         "anchorVertical": "TOP",
@@ -537,6 +533,11 @@
       },
       "custom": {}
     },
+    "input-log": {
+      "enabled": false,
+      "settings": {},
+      "custom": {}
+    },
     "keystrokes": {
       "enabled": true,
       "settings": {
@@ -589,15 +590,15 @@
           "hueSpeed": 0.2
         },
         "shadow": true,
+        "animation-ms": 100,
+        "scale": 1.0,
+        "spacing": 1.0,
+        "key-size": 19.0,
         "show-movement-keys": true,
         "show-jump-key": true,
         "hide-jump-key-text": true,
         "show-mouse-buttons": true,
-        "show-mouse-button-cps": false,
-        "scale": 1.0,
-        "key-size": 19.0,
-        "spacing": 1.0,
-        "animation-ms": 100
+        "show-mouse-button-cps": false
       },
       "custom": {
         "anchorVertical": "TOP",
@@ -637,8 +638,8 @@
         "background-enabled": true,
         "padding-pixels": 4.0,
         "scale": 1.0,
-        "format": "%s ms",
-        "update-delay": 2.0
+        "update-delay": 2.0,
+        "format": "%s ms"
       },
       "custom": {
         "anchorVertical": "TOP",
@@ -678,8 +679,8 @@
         "background-enabled": true,
         "padding-pixels": 4.0,
         "scale": 1.0,
-        "format": "$format(2, $used) / $format(2, $max)",
-        "update-delay": 2.0
+        "update-delay": 2.0,
+        "format": "$format(2, $used) / $format(2, $max)"
       },
       "custom": {
         "anchorVertical": "TOP",
@@ -701,7 +702,7 @@
       "custom": {}
     },
     "perspective": {
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "disable-second-person-toggle": true,
         "scroll-distance": true,
@@ -743,9 +744,9 @@
         "background-enabled": true,
         "padding-pixels": 4.0,
         "scale": 1.0,
-        "format": "%.2f blocks",
         "hide-empty": true,
-        "only-players": true
+        "only-players": true,
+        "format": "%.2f blocks"
       },
       "custom": {
         "anchorVertical": "TOP",
@@ -918,6 +919,11 @@
         "posPercentY": 0.47953215,
         "anchorHorizontal": "CENTER"
       }
+    },
+    "test": {
+      "enabled": false,
+      "settings": {},
+      "custom": {}
     },
     "title": {
       "enabled": true,

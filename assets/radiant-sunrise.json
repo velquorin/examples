@@ -1,8 +1,4 @@
 {
-  "options": {
-    "locale": "",
-    "click-gui-key": 344
-  },
   "modules": {
     "ambiance": {
       "enabled": true,
@@ -104,10 +100,10 @@
         "background-enabled": true,
         "padding-pixels": 2.0,
         "item-spacing": 4.0,
-        "reverse-list": true,
-        "show-vertically": true,
         "show-item-names": true,
-        "show-durability": true
+        "show-durability": true,
+        "reverse-list": true,
+        "show-vertically": true
       },
       "custom": {
         "anchorVertical": "TOP",
@@ -221,9 +217,9 @@
         "background-enabled": true,
         "padding-pixels": 4.0,
         "scale": 1.0,
-        "format": "%s hit(s)",
         "hide-empty": true,
-        "only-players": true
+        "only-players": true,
+        "format": "%s hit(s)"
       },
       "custom": {
         "anchorVertical": "TOP",
@@ -264,9 +260,9 @@
         "padding-pixels": 4.0,
         "scale": 1.0,
         "show-position": true,
-        "show-view-angles": true,
-        "separate-lines": true,
-        "brackets": true,
+        "show-view-angles": false,
+        "separate-lines": false,
+        "brackets": false,
         "names": false,
         "decimal-places": 1,
         "use-format": false,
@@ -350,8 +346,8 @@
         "background-enabled": true,
         "padding-pixels": 4.0,
         "scale": 1.0,
-        "format": "$format($process)",
-        "update-delay": 2.0
+        "update-delay": 2.0,
+        "format": "$format($process)"
       },
       "custom": {
         "anchorVertical": "TOP",
@@ -537,6 +533,11 @@
       },
       "custom": {}
     },
+    "input-log": {
+      "enabled": false,
+      "settings": {},
+      "custom": {}
+    },
     "keystrokes": {
       "enabled": false,
       "settings": {
@@ -589,15 +590,15 @@
           "hueSpeed": 0.2
         },
         "shadow": true,
+        "animation-ms": 100,
+        "scale": 1.0,
+        "spacing": 1.0,
+        "key-size": 19.0,
         "show-movement-keys": true,
         "show-jump-key": true,
         "hide-jump-key-text": true,
         "show-mouse-buttons": true,
-        "show-mouse-button-cps": true,
-        "scale": 1.0,
-        "key-size": 21.0,
-        "spacing": 1.0,
-        "animation-ms": 100
+        "show-mouse-button-cps": true
       },
       "custom": {
         "anchorVertical": "TOP",
@@ -614,12 +615,12 @@
           "baseColor": {
             "_type": "Color",
             "red": 255,
-            "green": 210,
-            "blue": 191,
+            "green": 255,
+            "blue": 255,
             "alpha": 255
           },
           "rainbow": false,
-          "hueSpeed": 0.0
+          "hueSpeed": 0.2
         },
         "background-color": {
           "_type": "AnimatedColor",
@@ -634,17 +635,17 @@
           "hueSpeed": 0.2
         },
         "shadow": true,
-        "background-enabled": false,
+        "background-enabled": true,
         "padding-pixels": 4.0,
         "scale": 1.0,
-        "format": "%s ms",
-        "update-delay": 2.0
+        "update-delay": 2.0,
+        "format": "%s ms"
       },
       "custom": {
         "anchorVertical": "TOP",
-        "posPercentX": 0.5,
-        "posPercentY": 0.04459064,
-        "anchorHorizontal": "CENTER"
+        "posPercentX": 0.0,
+        "posPercentY": 0.0,
+        "anchorHorizontal": "LEFT"
       }
     },
     "memory": {
@@ -678,8 +679,8 @@
         "background-enabled": true,
         "padding-pixels": 4.0,
         "scale": 1.0,
-        "format": "$format(2, $used) / $format(2, $max)",
-        "update-delay": 2.0
+        "update-delay": 2.0,
+        "format": "$format(2, $used) / $format(2, $max)"
       },
       "custom": {
         "anchorVertical": "TOP",
@@ -701,7 +702,7 @@
       "custom": {}
     },
     "perspective": {
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "disable-second-person-toggle": true,
         "scroll-distance": true,
@@ -743,9 +744,9 @@
         "background-enabled": true,
         "padding-pixels": 4.0,
         "scale": 1.0,
-        "format": "%.2f blocks",
         "hide-empty": true,
-        "only-players": true
+        "only-players": true,
+        "format": "%.2f blocks"
       },
       "custom": {
         "anchorVertical": "TOP",
@@ -919,6 +920,11 @@
         "anchorHorizontal": "CENTER"
       }
     },
+    "test": {
+      "enabled": false,
+      "settings": {},
+      "custom": {}
+    },
     "title": {
       "enabled": true,
       "settings": {
@@ -996,7 +1002,7 @@
         "shadow": true,
         "background-enabled": true,
         "padding-pixels": 4.0,
-        "format": "$name ($distance m away)",
+        "format": "$name ($distance blocks away)",
         "hide-when-away": true,
         "hide-when-away-blocks": 750
       },
