@@ -950,7 +950,7 @@
       }
     },
     "viewmodel": {
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "size": 0.5,
         "scale-arms": false,
